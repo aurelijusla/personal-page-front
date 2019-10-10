@@ -24,6 +24,10 @@ export class CheatsheetItemComponent implements OnInit {
     return classes;
   }
 
+  onClick(cheatsheetItem) {
+    cheatsheetItem.isSelected = !cheatsheetItem.isSelected;
+  }
+
   
 
 }

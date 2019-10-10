@@ -1,7 +1,9 @@
 export class CheatsheetItem {
     id: number;
     name: string;
-    command: string;
+    description: string;
+    installCommand?: string;
+    downloadLink?: string;
     docs: string;
     isSelected: boolean;
 }
