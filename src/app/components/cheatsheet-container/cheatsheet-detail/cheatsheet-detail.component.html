@@ -1,0 +1,19 @@
+<mat-sidenav-content>
+    <div id="cheatsheet-detail-wrapper" *ngIf="cheatsheetItem">
+        <h1 class="cheatsheet-detail-title">
+            {{ cheatsheetItem.name }}
+        </h1>
+        <p class="cheatsheet-detail-description">
+            {{ cheatsheetItem.description }}
+        </p>
+        <p class="cheatsheet-detail-docs">
+            {{ cheatsheetItem.docs }}
+        </p>
+        <p *ngIf="cheatsheetItem.installCommand" class="cheatsheet-detail-install-command">
+            {{ cheatsheetItem.installCommand }}
+        </p>
+        <p *ngIf="cheatsheetItem.downloadLink" class="cheatsheet-detail-download-link">
+            {{ cheatsheetItem.downloadLink }}
+        </p>
+    </div>
+</mat-sidenav-content>

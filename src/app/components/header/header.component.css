@@ -1,0 +1,22 @@
+.mat-toolbar.mat-primary {
+    background: #000000;
+    color: #ffffff;
+}
+
+button:hover {
+    color: rgb(212, 226, 20);
+}
+
+#title {
+    margin-right: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    #title {
+        margin-right: 0px;
+    }
+
+    button {
+        margin-right: 0;
+    }
+}

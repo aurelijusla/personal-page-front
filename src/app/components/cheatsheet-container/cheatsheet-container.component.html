@@ -1,0 +1,9 @@
+<mat-sidenav-container>
+    <app-cheatsheet-sidenav
+        [cheatsheetItems]="cheatsheetItems"
+        (cheatsheetItemSelected)="childItemSeleceted($event)">
+    </app-cheatsheet-sidenav>
+    <app-cheatsheet-detail
+        [cheatsheetItem]="selectedCheatsheetItem">
+    </app-cheatsheet-detail>
+</mat-sidenav-container>

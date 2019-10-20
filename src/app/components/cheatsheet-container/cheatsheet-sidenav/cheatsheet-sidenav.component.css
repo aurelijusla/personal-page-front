@@ -1,0 +1,14 @@
+mat-sidenav {
+    background: whitesmoke;
+    border-right: solid black 1px;
+    width: 200px;
+    padding: 0px
+}
+
+.mat-button.selected {
+    background: rgb(212, 226, 20);
+}
+
+@media only screen and (max-width: 500px) {
+
+}

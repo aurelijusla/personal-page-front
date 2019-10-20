@@ -9,20 +9,19 @@ import { MaterialModule } from './material/material.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
-import { CheatsheetComponent } from './components/cheatsheet/cheatsheet.component';
-import { CheatsheetItemComponent } from './components/cheatsheet/cheatsheet-item/cheatsheet-item.component';
-import { CheatsheetSidenavComponent } from './components/cheatsheet/cheatsheet-sidenav/cheatsheet-sidenav.component';
-
+import { CheatsheetContainerComponent } from './components/cheatsheet-container/cheatsheet-container.component';
+import { CheatsheetSidenavComponent } from './components/cheatsheet-container/cheatsheet-sidenav/cheatsheet-sidenav.component';
+import { CheatsheetDetailComponent } from './components/cheatsheet-container/cheatsheet-detail/cheatsheet-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    AboutComponent,
+    CheatsheetContainerComponent,
     CheatsheetSidenavComponent,
-    CheatsheetItemComponent,
-    CheatsheetComponent,
-    AboutComponent
+    CheatsheetDetailComponent
     ],
   imports: [
     BrowserModule,

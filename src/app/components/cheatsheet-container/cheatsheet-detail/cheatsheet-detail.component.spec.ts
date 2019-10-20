@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CheatsheetComponent } from './cheatsheet.component';
+import { CheatsheetDetailComponent } from './cheatsheet-detail.component';
 
-describe('CheatsheetComponent', () => {
-  let component: CheatsheetComponent;
-  let fixture: ComponentFixture<CheatsheetComponent>;
+describe('CheatsheetDetailComponent', () => {
+  let component: CheatsheetDetailComponent;
+  let fixture: ComponentFixture<CheatsheetDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CheatsheetComponent ]
+      declarations: [ CheatsheetDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CheatsheetComponent);
+    fixture = TestBed.createComponent(CheatsheetDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
