@@ -31,7 +31,8 @@ div {
 }
 
 .cheatsheet-detail-install-command {
-
+    background: black;
+    color: whitesmoke;
 }
 
 .cheatsheet-detail-download-link {

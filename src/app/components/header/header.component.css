@@ -8,6 +8,7 @@ button:hover {
 }
 
 #title {
+    cursor: default;
     margin-right: 50px;
 }
 

@@ -1,6 +1,6 @@
 mat-sidenav {
     background: whitesmoke;
-    border-right: solid black 1px;
+    border-right: solid rgb(138, 138, 138) 1px;
     width: 200px;
     padding: 0px
 }

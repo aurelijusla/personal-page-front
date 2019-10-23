@@ -1,15 +1,17 @@
-html, body {
+:root {
+    --primary: rgb(231, 238, 220);
+}
+
+html,
+body {
+    background: var(--primary);
     height: 100%;
-    background: rgb(231, 238, 220);
+    margin: 0;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
 span {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
-}
-
-body {
-    margin: 0;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
 div {
@@ -19,7 +21,8 @@ div {
 .mat-button.mat-accent {
     background: rgb(20, 226, 99);
     color: #000000;
-    margin-top: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 ul {
