@@ -1,15 +1,20 @@
 .mat-toolbar.mat-primary {
-    background: #000000;
-    color: #ffffff;
-}
-
-button:hover {
-    color: rgb(212, 226, 20);
+    background: var(--dark);
+    color: var(--white);
 }
 
 #title {
     cursor: default;
     margin-right: 50px;
+}
+
+.mat-button.mat-dark {
+    background: var(--dark);
+    color: var(--white);
+}
+
+.active-link {
+    font-weight: bold !important;
 }
 
 @media only screen and (max-width: 500px) {

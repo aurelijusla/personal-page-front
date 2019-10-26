@@ -1,13 +1,13 @@
 mat-sidenav-content {
     position: relative;
-    background: rgb(231, 238, 220);
+    background: var(--white);
     padding-left: 250px;
     padding-right: 50px;
 }
 
 #cheatsheet-detail-wrapper {
-    background: whitesmoke;
-    border: solid black 1px;
+    background: var(--white);
+    border-bottom: var(--border);
     margin-top: 60px;
 }
 
@@ -19,26 +19,21 @@ div {
 }
 
 .cheatsheet-detail-title {
-    
 }
 
 .cheatsheet-detail-description {
-
 }
 
 .cheatsheet-detail-docs {
-
 }
 
 .cheatsheet-detail-install-command {
-    background: black;
-    color: whitesmoke;
+    background: var(--dark);
+    color: var(--white);
 }
 
 .cheatsheet-detail-download-link {
-
 }
 
 @media only screen and (max-width: 500px) {
-
 }

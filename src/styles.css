@@ -1,5 +1,11 @@
 :root {
     --primary: rgb(231, 238, 220);
+    --white: whitesmoke;
+    --dark: rgb(7, 22, 18);
+    --accent: rgb(20, 226, 99);
+    --active: rgb(212, 226, 20);
+    --text-dark: black;
+    --border: solid rgb(138, 138, 138) 1px;
 }
 
 html,
@@ -18,13 +24,23 @@ div {
     height: auto;
 }
 
-.mat-button.mat-accent {
-    background: rgb(20, 226, 99);
-    color: #000000;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
 ul {
     list-style: none;
+}
+
+.mat-button {
+    max-height: 37px;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+    margin-right: 6px;
+}
+
+.mat-button.mat-accent {
+    background: var(--accent);
+    color: var(--text-dark);
+}
+
+.mat-button:hover {
+    border-bottom: var(--border);
+    opacity: 0.9;
 }

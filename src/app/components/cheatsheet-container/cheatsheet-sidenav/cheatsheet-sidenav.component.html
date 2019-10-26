@@ -1,13 +1,18 @@
 <mat-sidenav mode="side" opened>
     <ul id="cheatsheet-list">
-        <li class="cheatsheet-list-item" *ngFor="let cheatsheetItem of cheatsheetItems">
+        <li
+            class="cheatsheet-list-item"
+            *ngFor="let cheatsheetItem of cheatsheetItems"
+        >
             <button
                 mat-button
                 color="accent"
                 class="cheatsheet-button"
                 (click)="onClick(cheatsheetItem)"
                 [class.selected]="cheatsheetItem === selectedCheatsheetItem"
-                >
+                [routerLink]="['/cheatsheet', cheatsheetItem.name | lowercase]"
+                routerLinkActive="active-item"
+            >
                 {{ cheatsheetItem.name }}
             </button>
         </li>

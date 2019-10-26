@@ -9,10 +9,16 @@
         <p class="cheatsheet-detail-docs">
             {{ cheatsheetItem.docs }}
         </p>
-        <p *ngIf="cheatsheetItem.installCommand" class="cheatsheet-detail-install-command">
+        <p
+            *ngIf="cheatsheetItem.installCommand"
+            class="cheatsheet-detail-install-command"
+        >
             {{ cheatsheetItem.installCommand }}
         </p>
-        <p *ngIf="cheatsheetItem.downloadLink" class="cheatsheet-detail-download-link">
+        <p
+            *ngIf="cheatsheetItem.downloadLink"
+            class="cheatsheet-detail-download-link"
+        >
             {{ cheatsheetItem.downloadLink }}
         </p>
     </div>

@@ -4,25 +4,25 @@ import { CheatsheetService } from '../../../services/cheatsheet.service';
 import { CheatsheetItem } from '../../../models/cheatsheet-item.model';
 
 @Component({
-  selector: 'app-cheatsheet-sidenav',
-  templateUrl: './cheatsheet-sidenav.component.html',
-  styleUrls: ['./cheatsheet-sidenav.component.css']
+    selector: 'app-cheatsheet-sidenav',
+    templateUrl: './cheatsheet-sidenav.component.html',
+    styleUrls: ['./cheatsheet-sidenav.component.css'],
 })
 export class CheatsheetSidenavComponent implements OnInit {
-  @Input() cheatsheetItems: CheatsheetItem[];
+    @Input() cheatsheetItems: CheatsheetItem[];
 
-  @Output() cheatsheetItemSelected: EventEmitter<CheatsheetItem> = new EventEmitter<CheatsheetItem>();
+    @Output() cheatsheetItemSelected: EventEmitter<
+        CheatsheetItem
+    > = new EventEmitter<CheatsheetItem>();
 
-  selectedCheatsheetItem: CheatsheetItem;
+    selectedCheatsheetItem: CheatsheetItem;
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit() {
-  };
+    ngOnInit() {}
 
-  onClick(cheatsheetItem: CheatsheetItem): void {
-    this.cheatsheetItemSelected.emit(cheatsheetItem);
-    this.selectedCheatsheetItem = cheatsheetItem;
-  };
-
+    onClick(cheatsheetItem: CheatsheetItem): void {
+        this.cheatsheetItemSelected.emit(cheatsheetItem);
+        this.selectedCheatsheetItem = cheatsheetItem;
+    }
 }

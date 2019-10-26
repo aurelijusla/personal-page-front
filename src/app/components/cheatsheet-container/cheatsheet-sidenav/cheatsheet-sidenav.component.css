@@ -1,14 +1,14 @@
 mat-sidenav {
-    background: whitesmoke;
-    border-right: solid rgb(138, 138, 138) 1px;
+    background: var(--white);
+    border-right: var(--border);
     width: 200px;
-    padding: 0px
+    padding: 0px;
 }
 
-.mat-button.selected {
-    background: rgb(212, 226, 20);
+.active-item {
+    background: var(--active);
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 500px) {
-
 }
