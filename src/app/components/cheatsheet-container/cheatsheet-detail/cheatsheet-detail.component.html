@@ -22,4 +22,10 @@
             {{ cheatsheetItem.downloadLink }}
         </p>
     </div>
+
+    <div id="cheatsheet-detail-wrapper" *ngIf="!cheatsheetItem">
+        <h1>
+            Select an item
+        </h1>
+    </div>
 </mat-sidenav-content>

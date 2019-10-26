@@ -13,24 +13,25 @@ import { CheatsheetContainerComponent } from './components/cheatsheet-container/
 import { CheatsheetSidenavComponent } from './components/cheatsheet-container/cheatsheet-sidenav/cheatsheet-sidenav.component';
 import { CheatsheetDetailComponent } from './components/cheatsheet-container/cheatsheet-detail/cheatsheet-detail.component';
 
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    AboutComponent,
-    CheatsheetContainerComponent,
-    CheatsheetSidenavComponent,
-    CheatsheetDetailComponent
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        AboutComponent,
+        CheatsheetContainerComponent,
+        CheatsheetSidenavComponent,
+        CheatsheetDetailComponent,
     ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    MaterialModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        MaterialModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
