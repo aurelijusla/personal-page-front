@@ -1,6 +1,6 @@
 <mat-sidenav-container>
     <app-cheatsheet-sidenav
-        [cheatsheetItems]="cheatsheetItems"
+        [cheatsheetItems$]="cheatsheetItems$"
         (cheatsheetItemSelected)="childItemSeleceted($event)"
     >
     </app-cheatsheet-sidenav>

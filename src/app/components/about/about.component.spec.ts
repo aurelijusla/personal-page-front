@@ -21,4 +21,12 @@ describe('AboutComponent', () => {
     it('should create', () => {
         expect(component).toBeTruthy();
     });
+
+    it('exists', () => {
+        expect(component).toBeDefined();
+    });
+
+    it('can be built', () => {
+        expect(component instanceof AboutComponent).toBe(true);
+    });
 });

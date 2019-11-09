@@ -2,7 +2,7 @@
     <ul id="cheatsheet-list">
         <li
             class="cheatsheet-list-item"
-            *ngFor="let cheatsheetItem of cheatsheetItems"
+            *ngFor="let cheatsheetItem of cheatsheetItems$ | async"
         >
             <button
                 mat-button

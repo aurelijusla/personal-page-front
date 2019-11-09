@@ -1,7 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import { CheatsheetService } from '../../../services/cheatsheet.service';
-import { CheatsheetItem } from '../../../models/cheatsheet-item.model';
+import { CheatsheetItem } from '../../../store/models/cheatsheet-item.model';
+
+import { Observable } from 'rxjs';
 
 @Component({
     selector: 'app-cheatsheet-sidenav',
@@ -9,7 +11,7 @@ import { CheatsheetItem } from '../../../models/cheatsheet-item.model';
     styleUrls: ['./cheatsheet-sidenav.component.css'],
 })
 export class CheatsheetSidenavComponent implements OnInit {
-    @Input() cheatsheetItems: CheatsheetItem[];
+    @Input() cheatsheetItems$: Observable<CheatsheetItem[]>;
 
     @Output() cheatsheetItemSelected: EventEmitter<
         CheatsheetItem
