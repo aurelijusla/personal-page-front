@@ -7,11 +7,14 @@
             {{ cheatsheetItem.description }}
         </p>
         <p class="cheatsheet-detail-docs">
-            {{ cheatsheetItem.docs }}
+            <a href="{{ cheatsheetItem.docs }}" target="_blank"
+                >Documentation</a
+            >
         </p>
         <p
             *ngIf="cheatsheetItem.installCommand"
             class="cheatsheet-detail-install-command"
+            (click)="copyInstallCommand(cheatsheetItem.installCommand)"
         >
             {{ cheatsheetItem.installCommand }}
         </p>
@@ -19,7 +22,9 @@
             *ngIf="cheatsheetItem.downloadLink"
             class="cheatsheet-detail-download-link"
         >
-            {{ cheatsheetItem.downloadLink }}
+            <a href="{{ cheatsheetItem.downloadLink }}" target="_blank"
+                >Download</a
+            >
         </p>
     </div>
 
