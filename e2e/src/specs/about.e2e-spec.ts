@@ -8,7 +8,7 @@ describe('About page tests', () => {
         page = new AboutPage();
     });
 
-    it('should display welcome message', async () => {
+    it('should display page title', async () => {
         await page.navigateTo();
         expect(await page.getPageTitle()).toEqual('Personal Page');
     });
