@@ -13,15 +13,6 @@
                 <li>
                     <button
                         mat-button
-                        onClick="window.open('//google.com')"
-                        color="accent"
-                    >
-                        <i class="fas fa-envelope-square"></i>Email
-                    </button>
-                </li>
-                <li>
-                    <button
-                        mat-button
                         onClick="window.open('//linkedin.com/in/aurelijus-lasys-87136115a')"
                         color="accent"
                     >
@@ -35,6 +26,18 @@
                         color="accent"
                     >
                         <i class="fab fa-github"></i>GitHub
+                    </button>
+                </li>
+                <li>
+                    <button
+                        mat-button
+                        (mouseover)="displayCopyText()"
+                        (mouseout)="displayEmailText()"
+                        (click)="copyEmailAddress(emailAddress)"
+                        color="accent"
+                    >
+                        <i class="fas fa-envelope-square"></i
+                        >{{ emailTextDisplayed }}
                     </button>
                 </li>
             </ul>
