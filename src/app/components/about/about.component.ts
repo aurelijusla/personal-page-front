@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
     ngOnInit() {}
 
     displayCopyText() {
-        this.emailTextDisplayed = 'Click to copy';
+        this.emailTextDisplayed = 'Copy';
     }
 
     displayEmailText() {

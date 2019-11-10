@@ -80,6 +80,10 @@ li {
     margin-right: 12px;
 }
 
+.mat-button {
+    font-size: 13px;
+}
+
 .mat-button.mat-accent {
     margin-top: 0px;
 }

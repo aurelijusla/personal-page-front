@@ -11,25 +11,27 @@
             </p>
             <ul id="contact-box">
                 <li>
-                    <button
+                    <a
                         mat-button
-                        onClick="window.open('//linkedin.com/in/aurelijus-lasys-87136115a')"
+                        target="_blank"
+                        href="https://www.linkedin.com/in/aurelijus-lasys-87136115a"
                         color="accent"
                     >
                         <i class="fab fa-linkedin"></i>LinkedIn
-                    </button>
+                    </a>
                 </li>
                 <li>
-                    <button
+                    <a
                         mat-button
-                        onClick="window.open('//github.com/aurelijusla')"
+                        target="_blank"
+                        href="https://www.github.com/aurelijusla"
                         color="accent"
                     >
                         <i class="fab fa-github"></i>GitHub
-                    </button>
+                    </a>
                 </li>
                 <li>
-                    <button
+                    <a
                         mat-button
                         (mouseover)="displayCopyText()"
                         (mouseout)="displayEmailText()"
@@ -38,7 +40,7 @@
                     >
                         <i class="fas fa-envelope-square"></i
                         >{{ emailTextDisplayed }}
-                    </button>
+                    </a>
                 </li>
             </ul>
         </div>
